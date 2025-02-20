@@ -35,7 +35,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-arm64-server-20250211' --channel=alpha --networking=amazonvpc --master-size=r6g.xlarge --node-size=r6g.xlarge --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -102,7 +101,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=amazonvpc --ipv6 --topology=private --bastion --zones=us-west-2a --dns=public --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -170,7 +168,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=calico --master-size=c6g.large --node-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -236,7 +233,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=gce \
             --admin-access=0.0.0.0/0 \
             --create-args="--channel=alpha --networking=calico --gce-service-account=default" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
@@ -305,7 +301,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=calico --ipv6 --topology=private --bastion --zones=us-west-2a --dns=public --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -373,7 +368,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=cilium --master-size=c6g.large --node-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -439,7 +433,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=gce \
             --admin-access=0.0.0.0/0 \
             --create-args="--channel=alpha --networking=cilium --gce-service-account=default" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
@@ -508,7 +501,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=cilium --ipv6 --topology=private --bastion --zones=us-west-2a --dns=public --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -576,7 +568,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=cilium-etcd --master-size=c6g.large --node-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -644,7 +635,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-arm64-server-20250211' --channel=alpha --networking=cilium-eni --master-size=c6g.large --node-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -712,7 +702,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=flannel --master-size=c6g.large --node-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -780,7 +769,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=kube-router --master-size=c6g.large --node-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://storage.googleapis.com/k8s-release-dev/ci/latest.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -850,7 +838,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=kindnet --master-size=c6g.large --node-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \
@@ -916,7 +903,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=gce \
             --admin-access=0.0.0.0/0 \
             --create-args="--channel=alpha --networking=kindnet --gce-service-account=default" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
@@ -985,7 +971,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=aws \
             --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=kindnet --ipv6 --topology=private --bastion --zones=us-west-2a --dns=public --discovery-store=s3://k8s-kops-prow/discovery" \
             --kubernetes-version=https://dl.k8s.io/release/stable.txt \
             --kops-binary-path=/home/prow/go/src/k8s.io/kops/.build/dist/linux/amd64/kops \

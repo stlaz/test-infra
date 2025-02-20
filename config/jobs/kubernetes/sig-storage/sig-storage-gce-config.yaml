@@ -258,7 +258,7 @@ presubmits:
             - -xc
             - |
               make -C $GOPATH/src/k8s.io/kops test-e2e-install
-              kubetest2 kops -v=6 --cloud-provider=gce --up --down --build --env=KOPS_FEATURE_FLAGS=SELinuxMount \
+              kubetest2 kops -v=6 --up --down --build --env=KOPS_FEATURE_FLAGS=SELinuxMount \
                 --build-kubernetes=true --target-build-arch=linux/amd64 \
                 --admin-access=0.0.0.0/0 \
                 --kubernetes-feature-gates=SELinuxMount,SELinuxChangePolicy \

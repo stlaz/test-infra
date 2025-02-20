@@ -31,7 +31,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t3.large --master-size=t3.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.32/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.32.txt \
@@ -97,7 +96,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t4g.large --master-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.32/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.32.txt \
@@ -163,7 +161,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t3.large --master-size=t3.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.31/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.31.txt \
@@ -229,7 +226,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t4g.large --master-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.31/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.31.txt \
@@ -295,7 +291,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t3.large --master-size=t3.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.30/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.30.txt \
@@ -361,7 +356,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t4g.large --master-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.30/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.30.txt \
@@ -427,7 +421,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t3.large --master-size=t3.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.29/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.29.txt \
@@ -493,7 +486,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=aws \
           --create-args="--image='099720109477/ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-arm64-server-20250214' --channel=alpha --networking=calico --zones=eu-central-1a --node-size=t4g.large --master-size=t4g.large --discovery-store=s3://k8s-kops-prow/discovery" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/release-1.29/latest-ci-updown-green.txt \
           --kubernetes-version=https://dl.k8s.io/release/stable-1.29.txt \

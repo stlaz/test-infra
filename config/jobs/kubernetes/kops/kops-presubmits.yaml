@@ -85,7 +85,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=digitalocean \
             --cluster-name=e2e-test-do.k8s.local \
             --env S3_ENDPOINT=https://sfo3.digitaloceanspaces.com \
             --env JOB_NAME=pull-kops-e2e-kubernetes-do-gossip \
@@ -138,7 +137,6 @@ presubmits:
           kubetest2 kops \
           -v 2 \
           --up --build --down \
-          --cloud-provider=digitalocean \
           --cluster-name=e2e-test-do.k8s.local \
           --env S3_ENDPOINT=https://sfo3.digitaloceanspaces.com \
           --env JOB_NAME=pull-kops-e2e-kubernetes-do-gossip \
@@ -191,7 +189,6 @@ presubmits:
             kubetest2 kops \
             -v 2 \
             --up --build --down \
-            --cloud-provider=digitalocean \
             --cluster-name=e2e-b284d3e83b-4c77c.test-cncf-do.k8s.io \
             --env S3_ENDPOINT=https://sfo3.digitaloceanspaces.com \
             --env JOB_NAME=pull-kops-e2e-kubernetes-do-fqdn \

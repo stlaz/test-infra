@@ -45,7 +45,6 @@ spec:
         command:
         - logexporter
         - --node-name=$(NODE_NAME)
-        - --cloud-provider={{.CloudProvider}}
         - --gcs-path={{.GCSPath}}
         - --use-application-default-credentials={{.UseApplicationDefaultCredentials}}
         - --enable-hollow-node-logs={{.EnableHollowNodeLogs}}

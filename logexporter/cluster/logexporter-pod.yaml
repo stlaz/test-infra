@@ -32,7 +32,6 @@ spec:
     command:
     - logexporter
     - --node-name=$(NODE_NAME)
-    - --cloud-provider={{.CloudProvider}}
     - --gcs-path={{.GCSPath}}
     - --gcloud-auth-file-path=/etc/service-account/service-account.json
     - --enable-hollow-node-logs={{.EnableHollowNodeLogs}}

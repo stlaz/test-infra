@@ -1044,7 +1044,6 @@ periodics:
         kubetest2 kops \
           -v 2 \
           --up --down \
-          --cloud-provider=gce \
           --create-args="--channel=alpha --gce-service-account=default --networking=kindnet --set=spec.kubeProxy.proxyMode=nftables" \
           --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/master/latest-ci.txt \
           --kubernetes-version=https://storage.googleapis.com/k8s-release-dev/ci/latest.txt \

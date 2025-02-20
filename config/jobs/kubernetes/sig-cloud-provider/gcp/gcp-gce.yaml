@@ -409,7 +409,7 @@ presubmits:
             - |
               ARGS="--set=spec.containerd.runc.version=1.1.12 --set=spec.packages=nfs-common --set=spec.containerd.version=1.7.13"
               make -C $GOPATH/src/k8s.io/kops test-e2e-install
-              kubetest2 kops -v=6 --cloud-provider=gce --up --down --build \
+              kubetest2 kops -v=6 --up --down --build \
                 --build-kubernetes=true --target-build-arch=linux/amd64 \
                 --admin-access=0.0.0.0/0 \
                 --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/master/latest-ci.txt \
@@ -587,7 +587,7 @@ presubmits:
             - |
               ARGS="--set=spec.containerd.runc.version=1.1.12  --set=spec.packages=nfs-common --set=spec.containerd.version=1.7.13"
               make -C $GOPATH/src/k8s.io/kops test-e2e-install
-              kubetest2 kops -v=6 --cloud-provider=gce --up --down --build \
+              kubetest2 kops -v=6 --up --down --build \
                 --build-kubernetes=true --target-build-arch=linux/amd64 \
                 --admin-access=0.0.0.0/0 \
                 --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/master/latest-ci.txt \
@@ -647,7 +647,7 @@ presubmits:
             - |
               ARGS="--set=spec.containerd.runc.version=1.1.12  --set=spec.packages=nfs-common --set=spec.containerd.version=1.7.13"
               make -C $GOPATH/src/k8s.io/kops test-e2e-install
-              kubetest2 kops -v=6 --cloud-provider=gce --up --down --build \
+              kubetest2 kops -v=6 --up --down --build \
                 --build-kubernetes=true --target-build-arch=linux/amd64 \
                 --admin-access=0.0.0.0/0 \
                 --kops-version-marker=https://storage.googleapis.com/k8s-staging-kops/kops/releases/markers/master/latest-ci.txt \
